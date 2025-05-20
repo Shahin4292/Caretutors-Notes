@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'features/auth/presentation/pages/login_page.dart';
 import 'features/splash/presentation/pages/splash_page.dart';
 
 void main() {
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
     if (isFirstTime) {
       await prefs.setBool('first_time', false);
       await Future.delayed(const Duration(seconds: 2)); // Simulate splash delay
-      return const LoginPage(); // After splash, go to login
+      return  LoginPage(); // After splash, go to login
     } else {
-      return const LoginPage(); // You can also add logic for auto-login here
+      return  LoginPage(); // You can also add logic for auto-login here
     }
   }
 
@@ -32,8 +33,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/', // Default route
       getPages: [
         GetPage(name: '/', page: () => SplashWrapper()),
-        GetPage(name: '/login', page: () => const LoginPage()),
-        GetPage(name: '/home', page: () => const HomePage()),
+        GetPage(name: '/login', page: () =>  LoginPage()),
+        // GetPage(name: '/home', page: () => const HomePage()),
       ],
     );
   }
@@ -52,9 +53,9 @@ class SplashWrapper extends StatelessWidget {
     if (isFirstTime) {
       await prefs.setBool('first_time', false);
       await Future.delayed(const Duration(seconds: 2));
-      return const LoginPage();
+      return  LoginPage();
     } else {
-      return const LoginPage(); // Can be replaced with HomePage or onboarding
+      return  LoginPage(); // Can be replaced with HomePage or onboarding
     }
   }
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733614665783",
+    "project_id": "caretutors-6147e",
+    "storage_bucket": "caretutors-6147e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733614665783:android:ac9bd878cbd71d77d40fb2",
+        "android_client_info": {
+          "package_name": "com.example.caretutors_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEqtK9VDJD2nftajsMVgoB90DYrZFjQXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
